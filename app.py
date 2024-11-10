@@ -41,7 +41,7 @@ def create_user():
     email = data.get('email')
 
     if username in users_data:
-        return jsonify({"error": "User already exists"}), 400``
+        return jsonify({"error": "User already exists"}), 400
 
     users_data[username] = {
         "username": username,
